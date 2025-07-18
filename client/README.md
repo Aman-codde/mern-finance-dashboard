@@ -1,69 +1,92 @@
 # React + TypeScript + Vite
+# 💰 Finance Dashboard App (MERN + ML Predictions)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured Finance Dashboard built using the MERN stack with integrated machine learning predictions for revenue analysis. This project demonstrates full-stack development, data visualization, and predictive analytics using modern frontend and backend technologies.
 
-Currently, two official plugins are available:
+---
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔧 Frontend
+- [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Material UI (MUI)](https://mui.com/)
+- [Recharts](https://recharts.org/en-US) – for charts
+- [React Router](https://reactrouter.com/)
 
-## Expanding the ESLint configuration
+### ⚙️ Backend
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🤖 Machine Learning
+- [Regression.js](https://github.com/Tom-Alexander/regression-js) for predicting future revenue
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📊 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 📈 Key Performance Indicators Dashboard
+- 💼 Income & Expense Management
+- 🛍️ Product and Transaction CRUD APIs
+- 📊 Interactive Charts (Bar, Line, Pie)
+- 🤖 Revenue Prediction with Linear Regression
+- 🧭 Responsive & Clean UI using Material UI
+- 🚀 Deployed via [Vercel](https://vercel.com/) or [Fly.io](https://fly.io/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Folder Structure
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+/client → Frontend (React + Vite)
+/server → Backend (Express + MongoDB)
+/shared → Common interfaces/schemas (optional)
+/README.md → This file
+
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone 
+cd mern-finance-dashboard
+2. Install dependencies
+Client
+cd client
+npm install
+npm run dev
+
+Server
+cd server
+npm install
+npm run dev
+
+3. Environment Variables
+Create a .env file in the /server folder:
+env
+PORT=5000
+MONGO_URI=your_mongo_db_url
+JWT_SECRET=your_jwt_secret
+
+🧠 Learning Highlights
+Hands-on experience with Redux Toolkit + RTK Query
+
+API design with Express.js and MongoDB
+
+Machine learning integration in a real-world app
+
+Frontend design using Material UI + responsive layouts
+
+Recharts customization for clean, interactive graphs
+
+🌍 Deployment
+Frontend: Vercel
+
+Backend: Fly.io / Render / Railway / Cyclic (choose one)
+
+Database: MongoDB Atlas
+
+🙋‍♀️ Authors
+- [@aman-codde](https://github.com/aman-codde)
+
